@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: rgb(239, 251, 171);
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero {
+    background-image: url('Background1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .content {
+    color: white;
+  }
+  
+  .profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .curva {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 0;
+    display: block;
+    z-index: 2;
+  }
+  
+  
+  .blanco {
+    background-color: rgb(239, 251, 171);
+    min-height: 500px;
+    padding-top: 80px; /* para que el contenido no quede tapado por el SVG */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contenido-blanco {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+
+  
