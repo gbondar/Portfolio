@@ -97,8 +97,9 @@
 
   .modulo4 {
     background-image: url('Background3.png');
+    background-position: top;
+
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     min-height: 500px;
     padding-top: 80px;
@@ -115,6 +116,8 @@
     font-size: 1.2rem;
     color: white;
   }
+
+  
   
 
   
