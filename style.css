@@ -57,7 +57,7 @@
   
   
   .blanco {
-    background-color: rgb(239, 251, 171);
+    background-color: #ffffff;
     min-height: 500px;
     padding-top: 80px; /* para que el contenido no quede tapado por el SVG */
     display: flex;
@@ -72,6 +72,48 @@
     margin: auto;
     font-size: 1.2rem;
     color: #333;
+  }
+  
+  .verde {
+    background-image: url('Background2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contenido-verde {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .modulo4 {
+    background-image: url('Background3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contenido-modulo4 {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: white;
   }
   
 
