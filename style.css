@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background-color: rgb(239, 251, 171);
   }
   
@@ -17,61 +17,38 @@
   
   .hero {
     background-image: url('Background1.png');
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top;
     width: 100%;
-    height: 85vh;
+    min-height: 1650px;
+    height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding-top: 80px;
   }
+  
   
   .content {
     color: white;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 👈 centra horizontalmente */
   }
   
+  
   .profile-photo {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
   }
+  
   
   h1 {
     font-size: 2.5rem;
-  }
-  
-  .curva {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    line-height: 0;
-    display: block;
-    z-index: 2;
-  }
-  
-  
-  .blanco {
-    background-color: #ffffff;
-    min-height: 500px;
-    padding-top: 80px; /* para que el contenido no quede tapado por el SVG */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-  }
-  
-  .contenido-blanco {
-    max-width: 800px;
-    margin: auto;
-    font-size: 1.2rem;
-    color: #333;
   }
   
   .verde {
@@ -85,7 +62,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
   }
   
   .contenido-verde {
@@ -94,7 +70,7 @@
     font-size: 1.2rem;
     color: white;
   }
-
+  
   .modulo4 {
     background-image: url('Background3.png');
     background-position: top;
@@ -117,6 +93,78 @@
     color: white;
   }
 
+
+  .content h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .about-section {
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 60px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .about-top {
+    width: 100%;
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+  
+  .about-top h1 {
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .about-left {
+    text-align: left;
+    align-items: center;
+  }
+  
+  .about-left h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .about-left .profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-right {
+    max-width: 500px;
+    color: #000;
+    text-align: justify;
+  }
+  
+  .about-right h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  .about-right h2 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #111;
+  }
+  
+  
   
   
 
