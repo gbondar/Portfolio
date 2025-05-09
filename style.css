@@ -35,7 +35,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 👈 centra horizontalmente */
+    align-items: center; 
   }
   
   
@@ -59,7 +59,7 @@
     min-height: 700px;
     padding: 80px 20px 40px;
     display: flex;
-    flex-direction: column; /* 👈 permite que el título esté arriba */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
@@ -72,20 +72,21 @@
     color: white;
   }
   
+
+
   .modulo4 {
     background-image: url('Background3.png');
     background-position: top;
-
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 500px;
-    padding-top: 80px;
+    padding: 80px 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* ✅ apila verticalmente */
+    align-items: center;     /* ✅ centra todo horizontalmente */
     text-align: center;
-    position: relative;
   }
+  
   
   .contenido-modulo4 {
     max-width: 800px;
@@ -226,7 +227,7 @@
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 👈 fuerza 3 columnas exactas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 960px;
     width: 100%;
@@ -241,6 +242,145 @@
     padding: 10px;
     border-radius: 10px;
   }
+
+  .contact-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #235631;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+  
+  .contact-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .google-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+  }
+
+  .footer {
+    background-color: #235631;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8rem;
+  }
+  
+  /*ANIMACIONES DE HOLA SOY GONZALO BONDAR DATA ANALYST */
+
+  /* Colores desde clases */
+.saludo {
+  color: rgb(0, 0, 0);
+}
+
+.nombre {
+  color: rgba(213, 171, 0, 0.864);
+}
+
+.rol {
+  color: rgb(0, 0, 0);
+}
+
+/* Fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(213, 171, 0, 0.864);
+    width: 0;
+    animation: typing 1.4s steps(24, end) forwards, blink-caret 0.5s step-end 4;
+    animation-fill-mode: forwards;
+  }
+  
+  .typewriter.done {
+    border-right: none;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 21ch; /* Ajustalo a tu texto */
+    }
+  }
+  
+  @keyframes blink-caret {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgba(213, 171, 0, 0.864);
+    }
+  }
+  
+  
+  
+
+/* Slide-up */
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.5s ease-out 1.4s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*FIN ANIMACIONES DE HOLA SOY */
+  
+  
+  
+
+
+  
   
   
   
