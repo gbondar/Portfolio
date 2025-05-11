@@ -449,11 +449,11 @@
   
   @media (max-width: 600px) {
     .hero {
-      min-height: 2400px;
+      min-height: 1900px;
     }
   
     .about-section {
-      margin-top: 850px;
+      margin-top: 700px;
       flex-direction: column;
       align-items: center;
     }
@@ -469,6 +469,12 @@
 
     .about-right {
         text-align: left;
+      }
+
+    .about-right h2 {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #111;
       }
   
     .verde {
@@ -543,6 +549,15 @@
       }
   }
 
+  .about-title {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
   .skills-title {
     display: none;
     color: white;
@@ -556,6 +571,12 @@
   @media (max-width: 1400px) {
     .skills-title {
       display: block;
+    }
+    .about-title {
+        display: block;
+    }
+    .about-title-img {
+        display: none;
     }
   }
   
