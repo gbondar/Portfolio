@@ -407,3 +407,217 @@
 /*FIN ANIMACIONES DE HOLA SOY */
 
 /*rotar fotos skills */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1350px) {
+    .hero {
+      min-height: 2400px;
+    }
+  
+    .about-section {
+      margin-top: 1050px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+    .profile-photo {
+      margin: auto;
+      display: block;
+    }
+  
+    .verde {
+      background-image: url('Background2Alt.png');
+    }
+  
+    .skills-grid {
+      margin: 0 auto;
+      gap: 20px;
+      max-width: 90%;
+    }
+  
+    .skills-grid img {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .hero {
+      min-height: 2400px;
+    }
+  
+    .about-section {
+      margin-top: 1050px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-photo {
+      margin: auto;
+      display: block;
+    }
+  
+    .about-title-img {
+      max-width: 90%;
+    }
+  
+    .verde {
+      background-image: url('Background2Alt.png');
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+      gap: 15px;
+      max-width: 95%;
+    }
+  
+    .skills-grid img {
+      height: 100px;
+      padding: 8px;
+    }
+
+    .about-left {
+        text-align: left;
+        align-items: center;
+        display: flex;
+        position: relative;
+      }
+      
+    
+      .about-left h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .about-left .profile-photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    
+    /*WRAPPER CIRCULOS ALREDOR DE LA FOTO */
+      .photo-wrapper {
+        position: relative;
+        width: 300px;
+        height: 300px;
+      }
+      
+      .photo-wrapper::before,
+      .photo-wrapper::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #235631;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    
+      
+      
+      .photo-wrapper::before {
+        width: 310px;
+        height: 310px;
+        border-width: 2px;
+      }
+      
+      .photo-wrapper::after {
+        width: 340px;
+        height: 340px;
+        border-width: 4px;
+      }
+  }
+
+  .skills-title {
+    display: none;
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  
+  /* Mostrar título solo en menos de 1350px */
+  @media (max-width: 1350px) {
+    .skills-title {
+      display: block;
+    }
+  }
+  
+  /* Ocultar Scikit Learn en menos de 600px */
+  @media (max-width: 600px) {
+    .skills-grid img[alt="Scikitlearn"] {
+      display: none;
+    }
+  }
+
+
+
+  /* Menos de 700px: achicar bastante */
+@media (max-width: 700px) {
+    .saludo.fade-in {
+      font-size: 1.5rem !important;
+    }
+  
+    .nombre.typewriter {
+      font-size: 2.2rem !important;
+    }
+  
+    .rol.slide-up {
+      font-size: 1.5rem !important;
+    }
+  }
+  
+  /* Menos de 500px: achicar aún más */
+  @media (max-width: 499px) {
+    .saludo.fade-in {
+      font-size: 1.2rem !important;
+    }
+  
+    .nombre.typewriter {
+      font-size: 1.7rem !important;
+    }
+  
+    .rol.slide-up {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .about-left {
+      justify-content: center;
+      left: -25px; /* quitar desplazamiento manual */
+      width: 100%;
+    }
+  
+    .photo-wrapper {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .about-left {
+      justify-content: center;
+      left: -25px;
+      width: 100%;
+    }
+  
+    .photo-wrapper {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      background-image: url('Background1Alt.png');
+    }
+  }
+  
+  
+  
