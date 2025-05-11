@@ -64,6 +64,9 @@
     flex-direction: column; 
     align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Centrado vertical */
+    padding: 40px 20px;
   }
 
   
@@ -109,7 +112,7 @@
   }
   
   .about-section {
-    margin-top: 400px;
+    margin-top: 600px;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -193,7 +196,7 @@
   /*FIN WRAPPER CIRCULOS ALREDOR DE LA FOTO */
   
   .about-right {
-    max-width: 500px;
+    max-width: 800px;
     color: #000;
     text-align: justify;
   }
@@ -282,12 +285,6 @@
     border-radius: 10px;
   }
 
-  .google-form {
-    width: 100%;
-    max-width: 700px;
-    margin: 60px auto 0;
-    padding: 0 20px;
-  }
 
   .footer {
     background-color: #235631;
