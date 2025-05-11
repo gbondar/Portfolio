@@ -466,6 +466,10 @@
     .about-title-img {
       max-width: 90%;
     }
+
+    .about-right {
+        text-align: left;
+      }
   
     .verde {
       background-image: url('Background2Alt.png');
