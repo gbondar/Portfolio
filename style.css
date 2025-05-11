@@ -410,13 +410,13 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
     .hero {
-      min-height: 2400px;
+      min-height: 2300px;
     }
   
     .about-section {
-      margin-top: 1050px;
+      margin-top: 750px;
       flex-direction: column;
       align-items: center;
     }
@@ -448,7 +448,7 @@
     }
   
     .about-section {
-      margin-top: 1050px;
+      margin-top: 850px;
       flex-direction: column;
       align-items: center;
     }
@@ -544,7 +544,7 @@
   }
   
   /* Mostrar título solo en menos de 1350px */
-  @media (max-width: 1350px) {
+  @media (max-width: 1400px) {
     .skills-title {
       display: block;
     }
@@ -613,7 +613,7 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1400px) {
     .hero {
       background-image: url('Background1Alt.png');
     }
