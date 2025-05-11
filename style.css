@@ -421,6 +421,11 @@
       align-items: center;
     }
 
+    .about-right {
+        text-align: left;
+      }
+      
+
   
     .profile-photo {
       margin: auto;
