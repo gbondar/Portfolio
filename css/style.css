@@ -1,3 +1,5 @@
+/* BASE */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,12 @@
     overflow: hidden;
   }
 
+  h1 {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2.5rem;
+  }
 
+/* HERO */
   
   .hero {
     background-image: url('../img/Background1.png');
@@ -49,71 +56,26 @@
     object-fit: cover;
   }
   
-  
-  h1 {
-    font-family: 'Electrolize', sans-serif;
-    font-size: 2.5rem;
-  }
-  
-  .verde {
-    background-image: url('../img/Background2.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%; /* ✅ fuerza a ocupar todo el ancho y alto */
-    background-attachment: scroll;
-    min-height: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
+  /*COMIENZA ABOUT ENCOLUMNADO */
 
-  
-  .contenido-verde {
-    max-width: 800px;
-    margin: auto;
-    font-size: 1.2rem;
+  .about-title {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.skills-title {
+    display: none;
     color: white;
-  }
-  
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
 
-
-  .modulo4 {
-    background-image: url('../img/Background3.png');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    padding: 80px 20px;
-    display: flex;
-    flex-direction: column; /* ✅ apila verticalmente */
-    align-items: center;     /* ✅ centra todo horizontalmente */
-    text-align: center;
-  }
-  
-  
-  .contenido-modulo4 {
-    max-width: 800px;
-    margin: auto;
-    font-size: 1.2rem;
-    color: white;
-  }
-
-
-  .content h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-  }
-  
-  .content h1 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-  }
-  
   .about-section {
     margin-top: 730px;
     display: flex;
@@ -127,8 +89,8 @@
   
   .about-top {
     width: 100%;
-    margin-bottom: -20px; /* podés achicarlo más si querés */
-    margin-top: -300px; /* esto lo empuja hacia arriba */
+    margin-bottom: -20px; 
+    margin-top: -300px; 
   }
   
   
@@ -138,7 +100,7 @@
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
-    text-underline-offset: 6px; /* espacio entre texto y subrayado */
+    text-underline-offset: 6px; 
   }
 
   .about-title-img {
@@ -150,7 +112,7 @@
   }
 
   .about-section {
-    background-color: transparent; /* o el color de fondo real */
+    background-color: transparent; 
   }
   
   
@@ -159,7 +121,7 @@
     align-items: center;
     display: flex;
     position: relative;
-    left: -50px; /* desplaza un poco a la izquierda */
+    left: -50px; 
   }
   
 
@@ -243,18 +205,138 @@
     margin-bottom: 40px;
     font-weight: bold;
     text-decoration: underline;
-    text-underline-offset: 6px; /* espacio entre texto y subrayado */
+    text-underline-offset: 6px; 
+  }
+  /*FIN DE ABOUT ENCOLUMNADO */
+  
+
+   /*ANIMACIONES DE HOLA SOY GONZALO BONDAR DATA ANALYST */
+
+    /* Colores desde clases */
+  .saludo {
+    color: rgb(0, 0, 0);
+
+  }
+
+  .nombre {
+    color: rgba(213, 171, 0, 0.864);
+  }
+
+  .rol {
+    color: rgb(0, 0, 0);
+  }
+
+  .saludo.fade-in {
+      font-size: 2rem !important;
+      color: black !important;
+    }
+    
+    .nombre.typewriter {
+      font-size: 3.5rem !important;
+      color: rgba(213, 171, 0, 0.864) !important;
+    }
+    
+    .rol.slide-up {
+      font-size: 2rem !important;
+      color: black !important;
+    }
+    
+
+  /* Fade-in */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid rgba(213, 171, 0, 0.864);
+      width: 0;
+      animation: typing 1.4s steps(24, end) forwards, blink-caret 0.5s step-end 4;
+      animation-fill-mode: forwards;
+    }
+    
+    .typewriter.done {
+      border-right: none;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 21ch; 
+      }
+    }
+    
+    @keyframes blink-caret {
+      0%, 100% {
+        border-color: transparent;
+      }
+      50% {
+        border-color: rgba(213, 171, 0, 0.864);
+      }
+    }
+    
+  
+  /* Slide-up */
+  .slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease-out 1.4s forwards;
+  }
+
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*FIN ANIMACIONES DE HERO */
+
+
+  /*COMIENZA SEGMENTO SKILLS (VERDE) */
+  
+  .verde {
+    background-image: url('../img/Background2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%; 
+    background-attachment: scroll;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
   }
   
 
-
+  
+  .contenido-verde {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1000px;
     width: 100%;
-    margin: -40px 0 0 250px; /* arriba | derecha | abajo | izquierda */
+    margin: -40px 0 0 250px;
   }
   
   
@@ -267,6 +349,62 @@
     border-radius: 10px;
   }
 
+  .skill-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+  }
+
+  /*COMIENZA MODULO CONTACTO*/
+
+  .modulo4 {
+    background-image: url('../img/Background3.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;
+  }
+  
+  
+  .contenido-modulo4 {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+
+  .content h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+
   .contact-top {
     width: 100%;
     display: flex;
@@ -276,8 +414,8 @@
 
   .contact-label {
     font-family: 'Manrope', sans-serif;
-    margin-top: 20px; /* separación respecto al botón */
-    font-size: 1rem;  /* tamaño medio, podés ajustar si hace falta */
+    margin-top: 20px; 
+    font-size: 1rem;  
     color: black;
     text-align: center;
   }
@@ -305,7 +443,7 @@
   }
   
   .contact-grid img {
-    max-width: 100px; /* o el tamaño que quieras */
+    max-width: 100px; 
     height: auto;
     object-fit: contain;
     background-color: transparent;
@@ -313,6 +451,9 @@
     border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
+
+
+  /*FOOTER */
 
   .footer {
     background-color: #235631;
@@ -323,26 +464,7 @@
     font-size: 0.8rem;
   }
 
-  .skill-item {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
   
-  .skill-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .skill-item:hover img {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-  }
 
   .contact-item {
     display: flex;
@@ -380,7 +502,7 @@
     font-family: 'Manrope', sans-serif;
     color: white;
     border: 2px solid white;
-    height: 48px; /* ✅ altura fija */
+    height: 48px;
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 500;
@@ -402,9 +524,9 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;
-    opacity: 0;            /* 👈 oculto por defecto */
+    opacity: 0;           
     transition: opacity 1s ease-in-out;
-    pointer-events: none;  /* evita clics cuando no se ve */
+    pointer-events: none;  
   }
   
 
@@ -505,21 +627,10 @@
   .btn-icon {
     width: 40px;
     height: 40px;
-    object-fit: contain; /* no recorta, puede estirar un poco */
+    object-fit: contain; 
     flex-shrink: 0;
   }
   
-  #copy-message {
-    margin-top: 16px;
-    padding: 6px 12px;
-    background-color: rgba(255, 255, 255, 0.85);
-    color: #235631;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
   
   @keyframes fadeOut {
     0% { opacity: 1; }
@@ -535,14 +646,6 @@
     color: white;
     cursor: pointer;
   }
-  
-  
-  @keyframes fadeOut {
-    0% { opacity: 1; }
-    70% { opacity: 1; }
-    100% { opacity: 0; display: none; }
-  }
-  
   
 
   .skill-label {
@@ -563,100 +666,6 @@
     opacity: 1;
   }
   
-  
-  /*ANIMACIONES DE HOLA SOY GONZALO BONDAR DATA ANALYST */
-
-  /* Colores desde clases */
-.saludo {
-  color: rgb(0, 0, 0);
-
-}
-
-.nombre {
-  color: rgba(213, 171, 0, 0.864);
-}
-
-.rol {
-  color: rgb(0, 0, 0);
-}
-
-.saludo.fade-in {
-    font-size: 2rem !important;
-    color: black !important;
-  }
-  
-  .nombre.typewriter {
-    font-size: 3.5rem !important;
-    color: rgba(213, 171, 0, 0.864) !important;
-  }
-  
-  .rol.slide-up {
-    font-size: 2rem !important;
-    color: black !important;
-  }
-  
-
-/* Fade-in */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.typewriter {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid rgba(213, 171, 0, 0.864);
-    width: 0;
-    animation: typing 1.4s steps(24, end) forwards, blink-caret 0.5s step-end 4;
-    animation-fill-mode: forwards;
-  }
-  
-  .typewriter.done {
-    border-right: none;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 21ch; /* Ajustalo a tu texto */
-    }
-  }
-  
-  @keyframes blink-caret {
-    0%, 100% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgba(213, 171, 0, 0.864);
-    }
-  }
-  
-  
-  
-
-/* Slide-up */
-.slide-up {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideUp 0.5s ease-out 1.4s forwards;
-}
-
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/*FIN ANIMACIONES DE HOLA SOY */
 
 .cv-download {
     display: flex;
@@ -676,7 +685,7 @@
     border-radius: 30px;
     transition: all 0.3s ease;
     font-weight: 600;
-    margin-top: 60px; /* 👈 nuevo: baja un poco el botón */
+    margin-top: 60px; 
   }
   
   
@@ -695,10 +704,10 @@
   .cta-wrapper {
     margin-top: 30px;
     position: absolute;
-    bottom: -170px; /* o ajustá según cuánto quieras bajarlo */
+    bottom: -170px;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px; /* o el mismo ancho que .about-right */
+    width: 800px;
   }
   
   
@@ -713,7 +722,7 @@
     font-family: 'Manrope', sans-serif;
     width: 100%;
     margin-top: 40px;
-    margin-bottom: -30px; /* 👈 para que no deje aire debajo del h2 */
+    margin-bottom: -30px; 
     font-size: 1.5rem;
     color: #000000;
     font-weight: 600;
@@ -721,21 +730,6 @@
     text-underline-offset: 6px;
   }
 
-  
-  @media (max-width: 600px) {
-    .cv-download {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-
-    }
-
-  
-    .flecha.izquierda, .flecha.derecha {
-      display: none;
-    }
-  }
-  
 
 /* MEDIA QUERIES */
 
@@ -786,6 +780,20 @@
     .skills-grid img {
       height: 120px;
     }
+
+    .skills-title {
+      display: block;
+    }
+    .about-title {
+        display: block;
+    }
+    .about-title-img {
+        display: none;
+    }
+
+    .hero {
+      background-image: url('../img/Background1Alt.png');
+    }
   }
   
   @media (max-width: 600px) {
@@ -797,6 +805,18 @@
       margin-top: 700px;
       flex-direction: column;
       align-items: center;
+    }
+
+    .cv-download {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+
+    }
+
+  
+    .flecha.izquierda, .flecha.derecha {
+      display: none;
     }
 
     .profile-photo {
@@ -855,7 +875,6 @@
         object-fit: cover;
       }
     
-    /*WRAPPER CIRCULOS ALREDOR DE LA FOTO */
       .photo-wrapper {
         position: relative;
         width: 300px;
@@ -890,40 +909,8 @@
       }
   }
 
-    .about-title {
-        display: none;
-        color: rgb(0, 0, 0);
-        font-size: 2.2rem;
-        margin-bottom: 30px;
-        text-decoration: underline;
-        text-underline-offset: 6px;
-    }
 
-    .skills-title {
-        display: none;
-        color: white;
-        font-size: 2.2rem;
-        margin-bottom: 30px;
-        text-decoration: underline;
-        text-underline-offset: 6px;
-    }
   
-  /* Mostrar título solo en menos de 1350px */
-  @media (max-width: 1400px) {
-    .skills-title {
-      display: block;
-    }
-    .about-title {
-        display: block;
-    }
-    .about-title-img {
-        display: none;
-    }
-  }
-  
-
-
-  /* Menos de 700px: achicar bastante */
 @media (max-width: 700px) {
     .saludo.fade-in {
       font-size: 1.5rem !important;
@@ -936,9 +923,19 @@
     .rol.slide-up {
       font-size: 1.5rem !important;
     }
+
+    .about-left {
+      justify-content: center;
+      left: -25px; 
+      width: 100%;
+    }
+  
+    .photo-wrapper {
+      margin: 0 auto;
+    }
   }
   
-  /* Menos de 500px: achicar aún más */
+  
   @media (max-width: 499px) {
     .saludo.fade-in {
       font-size: 1.2rem !important;
@@ -953,29 +950,6 @@
     }
   }
 
-  @media (max-width: 700px) {
-    .about-left {
-      justify-content: center;
-      left: -25px; /* quitar desplazamiento manual */
-      width: 100%;
-    }
-  
-    .photo-wrapper {
-      margin: 0 auto;
-    }
-  }
-  
-  @media (max-width: 400px) {
-    .about-left {
-      justify-content: center;
-      left: -25px;
-      width: 100%;
-    }
-  
-    .photo-wrapper {
-      margin: 0 auto;
-    }
-  }
 
   @media (max-width: 400px) {
     .about-left {
@@ -987,13 +961,10 @@
     .photo-wrapper {
       margin: 0 auto;
     }
+
   }
 
-  @media (max-width: 1400px) {
-    .hero {
-      background-image: url('../img/Background1Alt.png');
-    }
-  }
+
 
   @media (max-width: 362px) {
     .profile-photo,
