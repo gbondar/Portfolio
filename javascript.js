@@ -39,13 +39,31 @@ window.addEventListener("load", () => {
       
         // Gmail
         document.getElementById("gmail-btn").addEventListener("click", () => {
-          window.open("https://mail.google.com/mail/?view=cm&to=gonza.bondar@gmail.com", "_blank");
-        });
-      
-        // Outlook
-        document.getElementById("outlook-btn").addEventListener("click", () => {
-          window.open("https://outlook.live.com/mail/0/deeplink/compose?to=gonza.bondar@gmail.com", "_blank");
-        });
+            if (isMobile()) {
+              // Intenta abrir la app de Gmail
+              window.location.href = "googlegmail://co?to=gonza.bondar@gmail.com";
+              // Fallback a web luego de 1s si no se abre
+              setTimeout(() => {
+                window.open("https://mail.google.com/mail/?view=cm&to=gonza.bondar@gmail.com", "_blank");
+              }, 1000);
+            } else {
+              window.open("https://mail.google.com/mail/?view=cm&to=gonza.bondar@gmail.com", "_blank");
+            }
+          });
+          
+          document.getElementById("outlook-btn").addEventListener("click", () => {
+            if (isMobile()) {
+              // Intenta abrir la app de Outlook
+              window.location.href = "ms-outlook://compose?to=gonza.bondar@gmail.com";
+              // Fallback a web
+              setTimeout(() => {
+                window.open("https://outlook.live.com/mail/0/deeplink/compose?to=gonza.bondar@gmail.com", "_blank");
+              }, 1000);
+            } else {
+              window.open("https://outlook.live.com/mail/0/deeplink/compose?to=gonza.bondar@gmail.com", "_blank");
+            }
+          });
+          
       
         // Copiar al portapapeles
         document.getElementById("copy-btn").addEventListener("click", () => {
