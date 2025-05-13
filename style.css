@@ -739,6 +739,18 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1800px) {
+    .hero {
+      min-height: 2300px;
+    }
+
+    .about-section {
+        margin-top: 950px;
+      }
+
+}
+  
+
 @media (max-width: 1400px) {
     .hero {
       min-height: 2300px;
