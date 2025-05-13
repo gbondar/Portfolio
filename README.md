@@ -26,10 +26,15 @@ El objetivo es presentar mis habilidades como analista de datos, mostrar los pro
 ###  Estructura del proyecto
 /
 ├── index.html
+
 ├── /css
 │   └── style.css
+
+
 ├── /js
 │   └── javascript.js
+
+
 ├── /img
 │   └── (todas las imágenes del sitio)
 
