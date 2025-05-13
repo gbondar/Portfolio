@@ -24,5 +24,60 @@ window.addEventListener("load", () => {
         }
       });
     }
+
+    document.getElementById("mail-button").addEventListener("click", () => {
+        const container = document.getElementById("mail-options");
+      
+        // Si ya están visibles, ocultamos
+        if (container.style.display === "flex") {
+          container.style.display = "none";
+          container.innerHTML = "";
+          return;
+        }
+      
+        // Si no, los mostramos
+        container.style.display = "flex";
+        container.innerHTML = `
+          <button class="mail-option-btn" id="gmail-btn">Gmail</button>
+          <button class="mail-option-btn" id="outlook-btn">Outlook</button>
+          <button class="mail-option-btn" id="copy-btn">Copiar dirección de mail</button>
+        `;
+      
+        // Gmail
+        document.getElementById("gmail-btn").addEventListener("click", () => {
+          window.open("https://mail.google.com/mail/?view=cm&to=gonza.bondar@gmail.com", "_blank");
+        });
+      
+        // Outlook
+        document.getElementById("outlook-btn").addEventListener("click", () => {
+          window.open("https://outlook.live.com/mail/0/deeplink/compose?to=gonza.bondar@gmail.com", "_blank");
+        });
+      
+        // Copiar al portapapeles
+        document.getElementById("copy-btn").addEventListener("click", () => {
+          navigator.clipboard.writeText("gonza.bondar@gmail.com").then(() => {
+            // Mostrar mensajito
+            const msg = document.createElement("div");
+            msg.id = "copy-message";
+            msg.textContent = "Dirección de mail copiada al portapapeles";
+            container.appendChild(msg);
+      
+            // Eliminar luego de 3 segundos
+            setTimeout(() => {
+              if (msg) msg.remove();
+            }, 3000);
+          });
+        });
+      });
+      
+
+
+
+
+
+
+
   });
+
+
   
