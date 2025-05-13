@@ -46,9 +46,14 @@
             <h2 class="invite">Te invito a que leas mi perfil completo!</h2>
             <div class="cv-download">
                 <img src="./flecha.png" alt="Flecha izquierda" class="flecha izquierda">
-                <a href="./Curriculum Vitae - Bondar Gonzalo.pdf" download class="cv-button">Descargar CV</a>
+                <a href="https://github.com/gbondar/Resume_BondarGonzalo/raw/main/Curriculum%20Vitae%20-%20Bondar%20Gonzalo.pdf" 
+                   target="_blank" 
+                   class="cv-button">
+                   Ver CV
+                </a>
                 <img src="./flecha2.png" alt="Flecha derecha" class="flecha derecha">
-            </div>
+              </div>
+              
       </div>
     </div>
   </section>
@@ -113,8 +118,29 @@
             <span class="contact-label">Mail</span>
           </div>
           
-          <!-- Contenedor oculto para los botones -->
-          <div class="mail-options" id="mail-options" style="display: none;"></div>
+          <div id="mail-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+              <span class="close-btn" id="close-modal">&times;</span>
+              <h2 class="modal-title">Opciones</h2>
+              <div class="modal-buttons">
+                <button class="mail-option-btn" id="gmail-btn">
+                  <img src="./gmail-Photoroom.png" class="btn-icon" alt="Gmail">
+                  Gmail
+                </button>
+                <button class="mail-option-btn" id="outlook-btn">
+                  <img src="./outlook_photoroom.png" class="btn-icon" alt="Outlook">
+                  Outlook
+                </button>
+                <button class="mail-option-btn" id="copy-btn">
+                  <img src="./clipboard-Photoroom.png" class="btn-icon" alt="Copiar">
+                  Copiar dirección de mail
+                </button>
+              </div>
+              <div id="copy-message"></div>
+            </div>
+          </div>
+          
+          
           
     </div>
   </section>
