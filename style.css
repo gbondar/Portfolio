@@ -739,7 +739,7 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1800px) {
+@media (min-width: 1800px) {
     .hero {
       min-height: 2300px;
     }
