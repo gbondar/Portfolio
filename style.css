@@ -741,11 +741,11 @@
 
 @media (min-width: 1800px) {
     .hero {
-      min-height: 2300px;
+      min-height: 2100px;
     }
 
     .about-section {
-        margin-top: 950px;
+        margin-top: 800px;
       }
 
 }
