@@ -126,6 +126,25 @@ window.addEventListener("load", () => {
         }
         });
 
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .typewriter');
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // solo animar 1 vez
+              }
+            });
+          }, {
+            threshold: 0.2 // 20% del elemento debe estar visible
+          });
+
+          animatedElements.forEach(el => observer.observe(el));
+        });
+
+
       
 
 
