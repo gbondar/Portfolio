@@ -345,7 +345,6 @@
   }
 
   .contact-item {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -356,17 +355,6 @@
     transform: scale(1.1);
     filter: brightness(1.1);
   }
-
-  .contact-item.hovered img {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-  }
-
-  .contact-item:active img {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-  }
-  
   
   
   .skill-label {
@@ -482,7 +470,84 @@
 }
 /*FIN ANIMACIONES DE HOLA SOY */
 
-/*rotar fotos skills */
+.cv-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 16px;
+  }
+  
+  .cv-button {
+    background-color: #235631;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 60px; /* 👈 nuevo: baja un poco el botón */
+  }
+  
+  
+  .cv-button:hover {
+    background-color: white;
+    color: #235631;
+    border-color: #235631;
+    box-shadow: 0 0 10px rgba(35, 86, 49, 0.3);
+  }
+
+  .about-section {
+    align-items: center;
+    position: relative;
+  }
+  
+  .cta-wrapper {
+    margin-top: 30px;
+    position: absolute;
+    bottom: -170px; /* o ajustá según cuánto quieras bajarlo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px; /* o el mismo ancho que .about-right */
+  }
+  
+  
+  .flecha {
+    margin-top: 0px;
+    width: 100px;
+    height: auto;
+  }
+
+  .invite {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: -30px; /* 👈 para que no deje aire debajo del h2 */
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+  
+  @media (max-width: 600px) {
+    .cv-download {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+
+    }
+
+  
+    .flecha.izquierda, .flecha.derecha {
+      display: none;
+    }
+  }
+  
 
 /* MEDIA QUERIES */
 
@@ -656,13 +721,6 @@
     }
   }
   
-  /* Ocultar Scikit Learn en menos de 600px */
-  @media (max-width: 600px) {
-    .skills-grid img[alt="Scikitlearn"] {
-      display: none;
-    }
-  }
-
 
 
   /* Menos de 700px: achicar bastante */
