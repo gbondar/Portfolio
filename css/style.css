@@ -18,7 +18,7 @@
 
   
   .hero {
-    background-image: url('Background1.png');
+    background-image: url('../img/Background1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
@@ -56,7 +56,7 @@
   }
   
   .verde {
-    background-image: url('Background2.png');
+    background-image: url('../img/Background2.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%; /* ✅ fuerza a ocupar todo el ancho y alto */
@@ -83,7 +83,7 @@
 
 
   .modulo4 {
-    background-image: url('Background3.png');
+    background-image: url('../img/Background3.png');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -774,7 +774,7 @@
     }
   
     .verde {
-      background-image: url('Background2Alt.png');
+      background-image: url('../img/Background2Alt.png');
     }
   
     .skills-grid {
@@ -819,7 +819,7 @@
       }
   
     .verde {
-      background-image: url('Background2Alt.png');
+      background-image: url('../img/Background2Alt.png');
     }
   
     .skills-grid {
@@ -991,7 +991,7 @@
 
   @media (max-width: 1400px) {
     .hero {
-      background-image: url('Background1Alt.png');
+      background-image: url('../img/Background1Alt.png');
     }
   }
 
