@@ -39,9 +39,9 @@ El objetivo es presentar mis habilidades como analista de datos, mostrar los pro
 │   └── (todas las imágenes del sitio)
 
 
-📬Contacto
+###  📬Contacto
 Podés contactarme por LinkedIn o directamente por correo desde el sitio.
 
-✨Objetivo
+###  Objetivo
 Seguir desarrollando mis habilidades en análisis de datos, BI y desarrollo web, mientras comparto mis proyectos de forma profesional.
 
