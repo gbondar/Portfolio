@@ -447,7 +447,7 @@
   
     /* Estilo 3D / Glass */
     backdrop-filter: blur(8px);
-    background-color: rgba(76, 129, 85, 0.841);
+    background-color: rgba(76, 129, 85, 1);
     box-shadow:
       0 12px 25px rgba(0, 0, 0, 0.4),
       0 4px 10px rgba(0, 0, 0, 0.3),
