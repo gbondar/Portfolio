@@ -759,6 +759,175 @@
 
   }
 
+  /* seccion proyectos */
+
+.proyects {
+  background-image: url('../img/Background5.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.proyects-top {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.proyects-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  margin-bottom: 60px;
+}
+
+.proyect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.proyect-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.proyect-item:hover {
+  transform: scale(1.05);
+}
+
+.proyect-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: white;
+  padding: 3px;
+}
+
+.proyect-label {
+  font-family: 'Manrope', sans-serif;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.proyect-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 86, 49, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.proyect-item:hover .overlay {
+  opacity: 1;
+}
+
+.proyect-btn {
+  background-color: #ffffff;
+  color: #235631;
+  min-width: 230px;
+  justify-content: center;
+  border: 2px solid #235631;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.proyect-btn:hover {
+  background-color: #235631;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.proyect-media {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.proyect-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: white;
+  padding: 3px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 86, 49, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.proyect-media:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media (min-width: 1800px) {
@@ -800,6 +969,10 @@
   
     .verde {
       background-image: url('../img/Background2Alt.png');
+    }
+
+    .proyects {
+      background-image: url('../img/Background5Alt.png');
     }
   
     .skills-grid {
@@ -951,6 +1124,10 @@
 
     #bg-animation {
       height: 700px; 
+    }
+
+    .proyect-grid {
+      grid-template-columns: 1fr;
     }
   
     .nombre.typewriter {

@@ -1,17 +1,17 @@
 window.addEventListener("load", () => {
-    // 🔝 Siempre arrancar arriba de todo
+    
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: "auto" });
-    }, 10); // pequeño delay para asegurar efecto
+    }, 10); 
   
  
   
-    // 👻 Ocultar la sección al inicio
+    
     const aboutSection = document.querySelector(".about-section");
     if (aboutSection) {
       aboutSection.classList.remove("show");
   
-      // 📏 Mostrar cuando scrolleás más de 500px
+     
       window.addEventListener("scroll", () => {
         if (window.scrollY > 500) {
           aboutSection.classList.add("show");
@@ -22,14 +22,14 @@ window.addEventListener("load", () => {
     document.getElementById("mail-button").addEventListener("click", () => {
         const container = document.getElementById("mail-options");
       
-        // Si ya están visibles, ocultamos
+        
         if (container.style.display === "flex") {
           container.style.display = "none";
           container.innerHTML = "";
           return;
         }
       
-        // Si no, los mostramos
+        
         container.style.display = "flex";
         container.innerHTML = `
           <button class="mail-option-btn" id="gmail-btn">Gmail</button>
@@ -134,11 +134,11 @@ window.addEventListener("load", () => {
             entries.forEach(entry => {
               if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // solo animar 1 vez
+                observer.unobserve(entry.target); 
               }
             });
           }, {
-            threshold: 0.2 // 20% del elemento debe estar visible
+            threshold: 0.2 
           });
 
           animatedElements.forEach(el => observer.observe(el));
