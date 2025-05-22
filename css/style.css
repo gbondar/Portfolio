@@ -820,9 +820,9 @@
 .proyect-label {
   font-family: 'Manrope', sans-serif;
   margin-top: 20px;
-  font-size: 1rem;
-  color: #ffffff;
-  font-weight: 600;
+  font-size: 1.3rem;
+  color:rgba(255, 255, 255, 0.864);
+  font-weight: 700;
 }
 
 .proyect-item {
@@ -921,6 +921,23 @@
 
 .proyect-media:hover .overlay {
   opacity: 1;
+}
+
+.proyect-description {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  max-width: 90%;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.proyect-description strong {
+  font-weight: bold;
+  color: rgba(213, 171, 0, 0.864);
+  font-size: 0.9rem;
 }
 
 
