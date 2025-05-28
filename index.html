@@ -14,6 +14,26 @@
 <body>
   <script src="./js/javascript.js" defer></script>
 
+    <header class="navbar">
+    <div class="nav-container">
+      <img src="./img/GB.png" alt="Logo" class="nav-logo">
+      <nav class="nav-links desktop-only">
+        <a href="#ancla-acerca">Acerca de mí</a><span class="divider">|</span>
+        <a href="#ancla-skills">Skills</a><span class="divider">|</span>
+        <a href="#ancla-proyectos">Proyectos</a><span class="divider">|</span>
+        <a href="#ancla-contacto">Contacto</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#ancla-acerca">Acerca de mí</a>
+      <a href="#ancla-skills">Skills</a>
+      <a href="#ancla-proyectos">Proyectos</a>
+      <a href="#ancla-contacto">Contacto</a>
+    </div>
+  </header>
 
   <section class="hero">
     <video autoplay loop muted playsinline id="bg-animation">
@@ -24,8 +44,9 @@
       <h1 class="typewriter nombre">Soy Gonzalo Bondar</h1>
       <h2 class="slide-up rol">Data Analyst</h2>
     </div>
-
-    <div class="about-section">
+    
+    <div id="ancla-acerca"></div>
+    <div id="acerca" class="about-section">
       <div class="about-top">
         <h1 class="about-title">Acerca de mí</h1>
         <img src="./img/About-Photoroom.png" alt="Acerca de mí" class="about-title-img">
@@ -59,7 +80,10 @@
     </div>
   </section>
 
-  <section class="verde">
+
+  <div id="ancla-skills"></div>
+
+  <section id="skills" class="verde">
     <div class="about-verde">
       <h1 class="skills-title">Skills</h1>
     </div>
@@ -103,7 +127,10 @@
     </div>
   </section>
 
-<section class="proyects">
+<div id="ancla-proyectos" style="position: relative; top: -30px;"></div>
+
+
+<section id="proyectos" class="proyects">
   <div class="proyects-top">
     <h1 class="proyects-title">Proyectos</h1>
   </div>
@@ -157,8 +184,9 @@
 
 
 
+ <div id="ancla-contacto" style="position: relative; top: -30px;"></div>
 
-  <section class="modulo4">
+  <section id="contacto" class="modulo4">
     <div class="contact-top">  
       <h1 class="contact-title">Contacto</h1>
     </div>
