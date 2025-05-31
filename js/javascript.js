@@ -226,6 +226,37 @@ window.addEventListener("load", () => {
           });
         });
 
+        document.getElementById('lang-btn').addEventListener('click', () => {
+          const options = document.getElementById('lang-options');
+          options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Ocultar si clicás afuera
+        document.addEventListener('click', (e) => {
+          const dropdown = document.querySelector('.custom-dropdown');
+          if (!dropdown.contains(e.target)) {
+            document.getElementById('lang-options').style.display = 'none';
+          }
+        });
+
+        document.querySelectorAll('.dropdown-option').forEach(option => {
+          option.addEventListener('click', () => {
+            const selected = option.textContent;
+            const lang = option.dataset.lang;
+
+            document.getElementById('lang-btn').textContent = `${selected} ▾`;
+            document.getElementById('lang-options').style.display = 'none';
+
+            // Redirección según idioma seleccionado
+            if (lang === 'es') {
+              window.location.href = 'index.html'; // español
+            } else if (lang === 'en') {
+              window.location.href = 'index-en.html'; // inglés
+            }
+          });
+        });
+
+
 
 
 

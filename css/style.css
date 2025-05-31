@@ -171,6 +171,59 @@
 }
 
 
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ajustá esto según el espaciado que quieras */
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+}
+
+#lang-btn {
+  background-color: transparent;
+  color: rgba(253, 203, 3, 0.864);
+  border: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#lang-btn:hover {
+  color: white;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  background-color: #003928;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  margin-top: 5px;
+  z-index: 1000;
+  min-width: 100px;
+}
+
+.dropdown-option {
+  padding: 8px 5px;
+  color: rgba(253, 203, 3, 0.864);
+  cursor: pointer;
+  font-size: 0.85rem;
+
+}
+
+.dropdown-option:hover {
+  background-color: #004c33;
+  color: white;
+}
+
+
+
+
+
 
 /* HERO */
   
